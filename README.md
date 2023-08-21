@@ -1,4 +1,12 @@
 # 在VSCode中编辑LaTex文本
+## 目录
+[准备工作](#准备工作)  
+&emsp;[1安装texlive](#1安装texlive)  
+&emsp;[2.下载并安装VSCode](#2下载并安装vscode)  
+&emsp;[3.安装LaTex插件](#3安装latex插件)  
+&emsp;[4.配置LaTex插件](#4配置latex插件)  
+[创建文件](#创建文件)  
+[编辑文件](#编辑文件)  
 ## 准备工作
 ### 1.安装texlive  
 安装texlive可以参考这篇[文章](https://zhuanlan.zhihu.com/p/493412905)。 
@@ -99,4 +107,19 @@ xelatex是支持中文的编译工具，而LaTex Workshop的默认编译工具�
 ## 编辑文件  
 [测试文件](https://github.com/elsieMeng0424/LaTexInVSCode/blob/main/test.tex)  
 
-[测试文件预览样式](https://github.com/elsieMeng0424/LaTexInVSCode/blob/main/test.pdf)
+[测试文件预览样式](https://github.com/elsieMeng0424/LaTexInVSCode/blob/main/test.pdf)  
+  
+基本框架：  
+```LaTex
+\documentclass{article}
+&usepackage{...}
+\begin{document}
+    TEXT
+\end{document}
+```
+标题、作者、日期：  
+```LaTex
+\title{title}
+\author{author}
+\date{2023/8/21}
+```
