@@ -109,17 +109,108 @@ xelatex是支持中文的编译工具，而LaTex Workshop的默认编译工具�
 
 [测试文件预览样式](https://github.com/elsieMeng0424/LaTexInVSCode/blob/main/test.pdf)  
   
+### 基本语法
 基本框架：  
 ```LaTex
 \documentclass{article}
-&usepackage{...}
+%usepackage{...}
 \begin{document}
     TEXT
 \end{document}
+```
+配置中文：  
+```LaTex
+\usepackage[UTF8]{ctex}
+\usepackage{anyfontsize}
+\usepackage{fontspec} %设置字体
+```  
+添加数学公式编辑包：
+```LaTex
+\usepackage{amsmath}
 ```
 标题、作者、日期：  
 ```LaTex
 \title{title}
 \author{author}
 \date{2023/8/21}
+\begin{document}
+\maketitle %显示标题等内容
+\end{document}
+```
+添加目录：
+```LaTex
+\tableofcontents
+```
+添加标题：
+```LaTex
+\section{}
+\subsection{}
+\subsubsection{}
+```
+添加段落：
+```LaTex
+\paragraph{}
+\subparagraph{}
+```
+添加新页并跳转：
+```tex
+\newpage
+```
+取消首行缩进：
+```tex
+\noindent
+```
+设置字体大小（由大至小）：
+```tex
+\Huge
+\huge
+\LARGE
+\Large
+\large
+\nomalsize
+\small
+\footnotesize
+\scriptsize
+\tiny
+```
+### 数学编辑语法
+上下标：
+```tex
+$a^{n}$ %上标
+$a_{n}$ %下标
+```
+分式：
+```tex
+$\frac{m}{n}$ %m分之n
+```
+开方：
+```tex
+$\sqrt{x}$ %x开平方
+$\sqrt[n]{x}$ %x开n次方
+```
+累计求和：
+```tex
+$\sum_{i=m}^{n}$
+```
+积分：
+```tex
+$\int_{i=m}^{n}$
+```
+向量：
+```tex
+$\vec a$ %a向量
+$\overrightarrow{AB}$ %由A指向B的向量
+```
+省略号：
+```tex
+$a+b+\cdots+z$
+```
+大括号（下方）：
+```tex
+$\underbrace{a+b+\cdots+z}_{26}$
+```
+横杠：
+```tex
+$\overline{m+n}$ %上横杠
+$\underline{m+n}$ %下横杠
 ```
