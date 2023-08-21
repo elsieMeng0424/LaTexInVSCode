@@ -217,3 +217,18 @@ $\underbrace{a+b+\cdots+z}_{26}$
 $\overline{m+n}$ %上横杠
 $\underline{m+n}$ %下横杠
 ```
+行内插入公式：
+```tex
+Einstein's $E=mc^2$.
+```
+行间插入公式：
+```tex
+\[ E=mc^2. \]
+```
+在一行中插入多个公式：
+```tex
+\begin{displaymath}
+    S_{n+1}=S_{n}+S_{n},
+    S_{n}=2^{n}
+\end{displaymath}
+```
