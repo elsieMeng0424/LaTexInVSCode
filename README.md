@@ -1,7 +1,7 @@
 # 在VSCode中编辑LaTex文本
 ## 目录
 [准备工作](#准备工作)  
-&emsp;[1安装texlive](#1安装texlive)  
+&emsp;[1.安装texlive](#1安装texlive)  
 &emsp;[2.下载并安装VSCode](#2下载并安装vscode)  
 &emsp;[3.安装LaTex插件](#3安装latex插件)  
 &emsp;[4.配置LaTex插件](#4配置latex插件)  
@@ -19,7 +19,7 @@
 **注意：**  
 在安装时，请注意勾选以下两个选项  
 ![](https://i.postimg.cc/9fvtCPbx/download-Warning.png)  
-这样在右键菜单中我们就可以看到“Open With Code”的选项，可以直接利用windows资源管理器管理我们的Markdown文件目录。  
+这样在右键菜单中我们就可以看到“Open With Code”的选项，可以直接利用windows资源管理器管理我们的文件目录。  
 
 如果先前已经安装过VSCode但却没有勾选这两个选项，有两种补救措施：  
 - 重新安装VScode  
@@ -34,7 +34,7 @@
 ![](https://i.postimg.cc/bwrH0pRb/20230820224154.png)  
 在VSCode的商店中搜索该插件并安装。  
 ### 4.配置LaTex插件  
-xelatex是支持中文的编译工具，而LaTex Workshop的默认编译工具为latexmk，因此我们要对新安装LaTex插件进行配置。
+xelatex是支持中文的编译工具，而LaTex Workshop的默认编译工具为latexmk，因此我们要对新安装的LaTex插件进行配置。
     
 在VSCode界面按F1，键入`setjson`，选择`首选项:打开用户设置(JSON)`，进入settings.json，在该文件中添加如下代码：  
 ```
@@ -105,6 +105,8 @@ xelatex是支持中文的编译工具，而LaTex Workshop的默认编译工具�
 ***注意：*** *该段代码要于json文件中的源代码放在同一大括号内，同时要给源代码的末尾加上英文的逗号，否则会导致配置失败。*  
   
 ## 创建文件  
+我们可以新建一个文件夹，鼠标右键选择“Open With VSCode”，在VSCode中新建文件。  
+
 在创建文件时，我们需要创建后缀为.tex的文件，创建完成即可开始编辑。  
 
 ## 编辑文件  
