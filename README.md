@@ -96,4 +96,7 @@ xelatex是支持中文的编译工具，而LaTex Workshop的默认编译工具�
 ## 创建文件  
 在创建文件时，我们需要创建后缀为.tex的文件，创建完成即可开始编辑。  
 
-## 编辑文件
+## 编辑文件  
+[测试文件](https://github.com/elsieMeng0424/LaTexInVSCode/blob/main/test.tex)  
+
+[测试文件预览样式](https://github.com/elsieMeng0424/LaTexInVSCode/blob/main/test.pdf)
